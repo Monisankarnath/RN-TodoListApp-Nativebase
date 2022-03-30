@@ -4,6 +4,7 @@ import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {Divider, StatusBar, useColorMode} from 'native-base';
 import {Header} from './components/';
+import {TaskList} from './containers';
 
 const Demo = () => {
   const {colorMode} = useColorMode();
@@ -17,6 +18,7 @@ const Demo = () => {
       />
       <Header />
       <Divider />
+      <TaskList />
     </SafeAreaView>
   );
 };
